@@ -1,5 +1,7 @@
 FROM node:8-alpine as builder
 
+RUN apk update && apk add git
+
 COPY package.json package-lock.json ./
 
 RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
