@@ -4,9 +4,6 @@ phases:
   install:
     commands:
       - npm install
-  pre_build:
-    commands:
-      - npm run pre_build
   build:
     commands:
       - npm run build
